@@ -76,7 +76,7 @@ void interrupt_task(void *pvParameters)
 		total_num+=1;
 		if(total_num==5) 
 		{
-			printf("关闭中断.............\r\n");
+			printf("中断屏蔽.............\r\n");
 			portDISABLE_INTERRUPTS();				//关闭中断
 			delay_xms(5000);						//延时5s
 			printf("打开中断.............\r\n");	//打开中断
